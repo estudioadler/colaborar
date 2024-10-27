@@ -4,8 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import { cn } from "@/lib/utils";
-import { Header } from "@/components/Header/Header";
-import  Sidebar  from "@/components/Sidebar/Sidebar";
 
 const fontSans = FontSans({
   weight: ["400"],
@@ -24,24 +22,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" suppressHydrationWarning className="antialiased">
+    <html lang="pt-br" suppressHydrationWarning>
       <body
         className={cn(
-          "flex min-h-screen font-sans antialiased bg-background text-foreground ml-14",
+          "flex min-h-screen font-sans antialiased bg-background text-foreground",
           fontSans.variable
         )}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Sidebar />
-          <main className="w-full min-h-screen">
-            <Header />
-            <div className="p-6">{children}</div>
-          </main>
+            <main className="w-full min-h-screen">
+              <div>{children}</div>
+            </main>
         </ThemeProvider>
       </body>
     </html>

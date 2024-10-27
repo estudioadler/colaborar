@@ -1,0 +1,196 @@
+{
+  "menuItems": [
+    {
+      "label": "Meus Cursos",
+      "icon": "LayoutDashboard",
+      "href": "/",
+      "subItems": []
+    },
+    {
+      "label": "Apoio ao Estudo",
+      "icon": "BookOpen",
+      "href": null,
+      "subItems": [
+        {
+          "label": "Mensagem para o Tutor",
+          "icon": "MessageSquare",
+          "href": "/mensagem-tutor",
+          "subItems": []
+        },
+        {
+          "label": "Livros",
+          "icon": "Book",
+          "href": "/livros",
+          "subItems": []
+        },
+        {
+          "label": "Manuais",
+          "icon": "FileText",
+          "href": null,
+          "subItems": [
+            {
+              "label": "Manual AVA",
+              "icon": null,
+              "href": "/manuais/ava",
+              "subItems": []
+            },
+            {
+              "label": "Manual do Estágio",
+              "icon": null,
+              "href": "/manuais/estagio",
+              "subItems": []
+            },
+            {
+              "label": "Manual Acadêmico",
+              "icon": null,
+              "href": "/manuais/academico",
+              "subItems": []
+            },
+            {
+              "label": "Manual da Avaliação Continuada EAD",
+              "icon": null,
+              "href": "/manuais/avaliacao-ead",
+              "subItems": []
+            }
+          ]
+        },
+        {
+          "label": "Boletim",
+          "icon": "FileText",
+          "href": "/boletim",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "label": "Agendamento de Provas",
+      "icon": "CalendarDays",
+      "href": "/agendamento-provas",
+      "subItems": []
+    },
+    {
+      "label": "Sala do Tutor",
+      "icon": "GraduationCap",
+      "href": "/sala-tutor",
+      "subItems": []
+    },
+    {
+      "label": "Biblioteca Virtual",
+      "icon": "SquareLibrary",
+      "href": "/biblioteca",
+      "subItems": []
+    },
+    {
+      "label": "Serviços",
+      "icon": "LayoutDashboard",
+      "href": null,
+      "subItems": [
+        {
+          "label": "Financeiro",
+          "icon": "FileText",
+          "href": "/financeiro",
+          "subItems": []
+        },
+        {
+          "label": "Solicitações de Serviços",
+          "icon": "FileText",
+          "href": null,
+          "subItems": [
+            {
+              "label": "Inclusão de DP e/ou AD",
+              "icon": null,
+              "href": "/solicitacoes/inclusao-dp-ad",
+              "subItems": []
+            },
+            {
+              "label": "Exclusão de DP e/ou AD",
+              "icon": null,
+              "href": "/solicitacoes/exclusao-dp-ad",
+              "subItems": []
+            },
+            {
+              "label": "Segunda Chamada de Prova",
+              "icon": null,
+              "href": "/solicitacoes/segunda-chamada",
+              "subItems": []
+            },
+            {
+              "label": "Outros Serviços",
+              "icon": null,
+              "href": "/solicitacoes/outros",
+              "subItems": []
+            }
+          ]
+        },
+        {
+          "label": "Entregar Documentos",
+          "icon": "FileText",
+          "href": "/entregar-documentos",
+          "subItems": []
+        },
+        {
+          "label": "Contratos",
+          "icon": "FileText",
+          "href": "/contratos",
+          "subItems": []
+        },
+        {
+          "label": "Extratos de Disciplinas",
+          "icon": "FileText",
+          "href": "/extratos-disciplinas",
+          "subItems": []
+        },
+        {
+          "label": "Download Matriz Curricular",
+          "icon": "FileText",
+          "href": "/matriz-curricular",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "label": "Oportunidades",
+      "icon": "PartyPopper",
+      "href": null,
+      "subItems": [
+        {
+          "label": "Canal Conecta",
+          "icon": "Users",
+          "href": "/canal-conecta",
+          "subItems": []
+        },
+        {
+          "label": "Amigo Vale Prêmios",
+          "icon": "User",
+          "href": "/amigo-vale-premios",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "label": "Ajuda",
+      "icon": "HelpCircle",
+      "href": null,
+      "subItems": [
+        {
+          "label": "Manual do AVA",
+          "icon": "FileText",
+          "href": "/manual-ava",
+          "subItems": []
+        },
+        {
+          "label": "Tour Virtual",
+          "icon": "FileText",
+          "href": "/tour-virtual",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "label": "Configurações",
+      "icon": "Settings",
+      "href": "/configuracoes",
+      "subItems": []
+    }
+  ]
+}
