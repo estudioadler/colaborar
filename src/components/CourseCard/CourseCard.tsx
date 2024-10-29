@@ -115,7 +115,7 @@ export default function CourseCard() {
           ))}
         </SelectContent>
       </Select>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {coursesData[selectedSemester].map((course, index) => (
           <Card key={index} className="flex flex-col justify-between">
             <div className="border-b w-full p-1.5 card-header rounded-t-lg" />

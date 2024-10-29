@@ -12,13 +12,13 @@ export default function AuthForm() {
   return (
     <div className="container relative hidden h-screen flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
       {/* Formulário */}
-      <div className="flex flex-col h-screen  justify-between p-12">
+      <div className="flex flex-col h-screen items-center justify-between p-12">
         <div className="flex items-center gap-2">
           <Image src="/logo.svg" alt="Logo" width={28} height={28} />
           <h1 className="text-2xl font-medium">Colaborar</h1>
         </div>
-        <Tabs defaultValue="login" className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
+        <Tabs defaultValue="login" className="w-full max-w-3xl">
+          <TabsList className="grid w-full grid-cols-2 max-w-56">
             <TabsTrigger value="login">Login</TabsTrigger>
             <TabsTrigger value="first-access">Primeiro Acesso</TabsTrigger>
           </TabsList>
