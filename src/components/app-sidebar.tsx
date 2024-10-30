@@ -33,6 +33,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import Image from "next/image"
+import Link from "next/link"
 
 const data = {
   user: {
@@ -43,7 +44,7 @@ const data = {
   navMain: [
     {
       title: "Meu Curso",
-      url: "#",
+      url: "/dashboard",
       icon: LayoutDashboard,
       isActive: true,
     },
@@ -53,15 +54,27 @@ const data = {
       icon: Bot,
       items: [
         {
-          title: "Genesis",
+          title: "Financeiro",
           url: "#",
         },
         {
-          title: "Explorer",
+          title: "Solicitações de Serviços",
           url: "#",
         },
         {
-          title: "Quantum",
+          title: "Entregar Documentos",
+          url: "#",
+        },
+        {
+          title: "Contratos",
+          url: "#",
+        },
+        {
+          title: "Extratos de Disciplinas",
+          url: "#",
+        },
+        {
+          title: "Download Matriz Curricular",
           url: "#",
         },
       ],
@@ -72,19 +85,11 @@ const data = {
       icon: SwatchBook,
       items: [
         {
-          title: "Introduction",
+          title: "Livros",
           url: "#",
         },
         {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
+          title: "Manuais",
           url: "#",
         },
       ],
@@ -104,24 +109,6 @@ const data = {
       title: "Biblioteca Virtual",
       url: "#",
       icon: SquareLibrary,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
     },
     {
       title: "Agendamento de provas",
@@ -137,7 +124,7 @@ const data = {
     },
     {
       title: "Ajuda",
-      url: "#",
+      url: "/dashboard/help",
       icon: CircleHelp,
     },
   ],
@@ -150,18 +137,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <a href="#">
+              <Link href="/dashboard">
                 <Image 
                   src="/logo.svg"
                   alt={data.user.name}
                   width={28}
                   height={28}
                 />
-                <div className="grid flex-1 text-left text-sm leading-tight">
+                <div className="grid flex-1 text-left leading-tight">
                   <span className="truncate font-semibold">Colaborar</span>
-                  <span className="truncate text-xs">Enterprise</span>
                 </div>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
